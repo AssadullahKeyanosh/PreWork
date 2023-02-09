@@ -11,8 +11,12 @@ function draw() {
   //call your functions and do your drawing here.
   // please erase code below once you are working.
   background(200, 200, 255);
+  strokeWeight(1);
+  fill(238, 255, 0);
+  ellipse(40, 40, 60, 60); // sun
+
+  strokeWeight(1);
   fill(255, 255, 255); // snowman color
-  noStroke();
   ellipse(200, 120, 75, 75); //top ellipse
   ellipse(200, 200, 100, 100); // central ellips
   ellipse(200, 300, 150, 150); // bottom ellipse
