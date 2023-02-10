@@ -7,13 +7,16 @@ function setup() {
   createCanvas(400, 400);
 }
 
-function draw() {
-  //call your functions and do your drawing here.
-  // please erase code below once you are working.
+var sunX = 40;
+draw = function () {
   background(200, 200, 255);
   strokeWeight(1);
   fill(238, 255, 0);
-  ellipse(40, 40, 60, 60); // sun
+  ellipse(sunX, 40, 60, 60); // sun
+  sunX = sunX + 1;
+  if (sunX == 440) {
+    sunX = 0;
+  }
 
   strokeWeight(1);
   fill(255, 255, 255); // snowman color
@@ -40,4 +43,4 @@ function draw() {
   stroke(139, 140, 145);
   line(50, 120, 153, 185); // right hand
   line(350, 120, 247, 185); // left hand
-}
+};
