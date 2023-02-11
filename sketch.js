@@ -20,7 +20,6 @@ draw = function () {
 
   strokeWeight(1);
   fill(255, 255, 255); // snowman color
-
   ellipse(200, 120, 75, 75); //top ellipse
   ellipse(200, 200, 100, 100); // central ellips
   ellipse(200, 300, 150, 150); // bottom ellipse
